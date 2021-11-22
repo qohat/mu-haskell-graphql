@@ -1,0 +1,29 @@
+name:               mu-haskell-try-graphql
+version:            0.1.0.0
+
+-- synopsis:
+-- description:
+homepage:           https://github.com/githubuser/mu-haskell-try-graphql#readme
+author:             Qohat Pretel
+maintainer:         haskell.qohatpp@gmail.com
+copyright:          2021 Qohat Pretel
+category:           Web
+build-type:         Simple
+cabal-version:      >=1.10
+extra-source-files: README.md
+
+executable mu-haskell-try-graphql
+  hs-source-dirs:   src
+  main-is:          Main.hs
+  ghc-options:      -Wall
+  default-language: Haskell2010
+  build-depends:
+      base        >=4.12  && <5
+    , conduit
+    , mu-graphql  >=0.4.1
+    , mu-rpc      >=0.4.0
+    , mu-schema   >=0.3.1
+    , text
+    , wai-extra
+    , warp
+
